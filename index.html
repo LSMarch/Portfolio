@@ -3,6 +3,7 @@
     <head>
         <meta charset="UFT-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./myassets/css/resets.css">
         <link rel="stylesheet" type="text/css" href="./myassets/css/style.css">
         <script src="https://kit.fontawesome.com/308e3ed2db.js" crossorigin="anonymous"></script>
         <title>Portfolio</title>
@@ -14,11 +15,11 @@
             <h3>add a catchy yet clever subheader here</h3>
         </header>
         <!-- Navigation bar -->
-        <nav class="sidenav">
+        <!-- <nav class="sidenav">
             <a href="#projects">Projects</a>
             <a href="#about-me">About Me</a>
             <a href="#contact">Contact</a>            
-        </nav> 
+        </nav>  -->
         <!-- You best believe i'm adding a pop-up with my resume once i've done it -->
         <!-- <section class="main"> -->
             <!-- <section id="about-me" class="card">
@@ -29,7 +30,25 @@
             <!-- <h2>Projects</h2> -->
             <!-- Project Gallery -->
             <!-- Can add placeholder for projects -->
-            <section id="projects" class="main">
+        
+            <aside class="sidenav">
+                
+                    <a href="#projects">Projects</a>
+                    <a href="#about-me">About Me</a>
+                    <a href="#contact">Contact</a>            
+                
+            </aside> 
+
+            <section class="aboutMe">
+            <img src="./myassets/images/selfie-1.jpg" alt="Me!">
+                <div>
+                    <h2>About Me</h2>
+                    <p>I'm super awesome and here is EVERY REASON WHY</p>
+                </div>
+            </section>
+            <hr>
+
+            <projects class="projects">
                 <div class="row">
                     <div class="column">
                         <div class="content">
@@ -38,8 +57,8 @@
                             <p>Project description</p>   
                         </div>
                     </div>
-                </div>
-                <div class="row">
+                
+                
                     <div class="column">
                         <div class="content">
                         <img src="./myassets/images/mnsHIL.jpg" alt="Star Trek Shield">
@@ -47,25 +66,42 @@
                             <p>Project description</p>
                         </div>
                     </div>
-                </div>
-                <div class="row">
+                
+                
                     <div class="column">
                         <div class="content">
-                        <img src="./myassets/images/3551894" alt="Star Trek Engineering">
+                        <img src="./myassets/images/3551894.jpg" alt="Star Trek Engineering">
+                            <h3>Project Name</h3>
+                            <p>Project description</p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="content">
+                        <img src="./myassets/images/3551894.jpg" alt="Star Trek Engineering">
+                            <h3>Project Name</h3>
+                            <p>Project description</p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="content">
+                        <img src="./myassets/images/3551894.jpg" alt="Star Trek Engineering">
+                            <h3>Project Name</h3>
+                            <p>Project description</p>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="content">
+                        <img src="./myassets/images/3551894.jpg" alt="Star Trek Engineering">
                             <h3>Project Name</h3>
                             <p>Project description</p>
                         </div>
                     </div>
                 </div>
-            </section>
-            <hr>
-            
-            <section id="about-me" class="card">
-                <img src="./myassets/images/selfie-1.jpg" alt="Me!">
-                <h2>About Me</h2>
-                <p>I'm super awesome and here is EVERY REASON WHY</p>
-            </section>
-            <hr>
+            </projects>
+            <hr>          
             
             <form id="contact" class="card"><h2>Contact</h2>
                 <label for="fname">First Name</label>
@@ -79,10 +115,7 @@
                 
                 <input type="submit" value="Submit">
             </form>
-        </section>
-        <!-- <section class="side-nav" id="my-side-nav">
-            <
-        </section> -->
+        
         <footer>
             <h3>Stay safe Traveler</h3>
         </footer>
