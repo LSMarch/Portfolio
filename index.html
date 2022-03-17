@@ -4,6 +4,7 @@
         <meta charset="UFT-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./myassets/css/style.css">
+        <script src="https://kit.fontawesome.com/308e3ed2db.js" crossorigin="anonymous"></script>
         <title>Portfolio</title>
     </head>    
     <body>
@@ -13,20 +14,18 @@
             <h3>add a catchy yet clever subheader here</h3>
         </header>
         <!-- Navigation bar -->
-        <nav class="topnav">
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <nav class="sidenav">
+            <a href="#projects">Projects</a>
+            <a href="#about-me">About Me</a>
+            <a href="#contact">Contact</a>            
+        </nav> 
         <!-- You best believe i'm adding a pop-up with my resume once i've done it -->
-        <section class="main">
-            <section id="about-me" class="card">
+        <!-- <section class="main"> -->
+            <!-- <section id="about-me" class="card">
                 <h2>About Me</h2>
                 <p>I'm super awesome and here is EVERY REASON WHY</p>
-            </section>
-            <hr>
+            </section> -->
+            
             <!-- <h2>Projects</h2> -->
             <!-- Project Gallery -->
             <!-- Can add placeholder for projects -->
@@ -43,7 +42,7 @@
                 <div class="row">
                     <div class="column">
                         <div class="content">
-                        <img >
+                        <img src="./myassets/images/mnsHIL.jpg" alt="Star Trek Shield">
                             <h3>Project Name</h3>
                             <p>Project description</p>
                         </div>
@@ -52,7 +51,7 @@
                 <div class="row">
                     <div class="column">
                         <div class="content">
-                        <img >
+                        <img src="./myassets/images/3551894" alt="Star Trek Engineering">
                             <h3>Project Name</h3>
                             <p>Project description</p>
                         </div>
@@ -60,16 +59,29 @@
                 </div>
             </section>
             <hr>
-            <section id="contact" class="card"><h2>Contact</h2>
-                <input>
-                <input>
-                <input>
+            
+            <section id="about-me" class="card">
+                <img src="./myassets/images/selfie-1.jpg" alt="Me!">
+                <h2>About Me</h2>
+                <p>I'm super awesome and here is EVERY REASON WHY</p>
             </section>
+            <hr>
+            
+            <form id="contact" class="card"><h2>Contact</h2>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.">
+                
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                
+                <label for="subject">Subject</label>                
+                <textarea id="subject" name="subject" placeholder="Write something">
+                
+                <input type="submit" value="Submit">
+            </form>
         </section>
-        <!-- <section class="righ-side">
-            <div class="card"><h4>hobbies and interests</h4></div>
-            <div class="card"><h4>social media</h4></div>
-            <div class="card"><h4>bears, beets, battlestar galactica</h4></div>
+        <!-- <section class="side-nav" id="my-side-nav">
+            <
         </section> -->
         <footer>
             <h3>Stay safe Traveler</h3>

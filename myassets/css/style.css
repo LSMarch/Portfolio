@@ -1,0 +1,101 @@
+*{
+    box-sizing:border-box;
+    background-color: #1b2845ff;
+    /* centers site */
+    max-width: 100%;
+    /* margin: auto; */
+}
+
+/* --- Header --- */
+header{
+    text-align: center;
+    border: 2px solid #e9d2f4ff;
+    position: relative;
+    padding: 25px 0;
+}
+
+h1 {
+        /* text-align: center; */
+        color: #ffff9bff;
+        font-size: 50px;
+}
+
+h3 {
+    color: #ffff9bff;
+    padding-top: 13px;
+}
+
+/* --- Side Navigation Bar --- */
+.sidenav {
+    position: absolute;
+    top: 145px;
+    right: 0px;
+    height: 100%;
+    width: 160px;
+    border: 2px solid #e9d2f4ff;
+    /* background-color: #1b2845ff; */
+    /* color: #ffff9bff; */
+}
+
+.sidenav a {
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffff9bff;
+    text-align: right;
+    padding-top: 50px;
+    margin-right: 5px;
+}
+
+/* .main{
+    max-width: 100%;
+    margin: auto;
+} */
+
+/* --- Portfolio Gallery --- */
+.row {
+    margin: 8px -16px;
+}
+
+/* padding between each column */
+.row,
+.row > .column {
+    padding:8px;
+}
+
+/* for equal columns, float next to each other */
+.column{
+    float: left;
+    width: 25%;
+}
+
+/* clear floats */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {
+    width: 100%;
+}
+
+.content {
+    padding: 10px;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%
+    }
+}
+
