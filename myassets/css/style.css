@@ -1,11 +1,4 @@
-*{
-    box-sizing:border-box;
-    /* background-color: #1b2845ff; */
-    /* centers site */
-    max-width: 100%;
-    /* margin: auto; */
-    
-}
+
 
 body {
     justify-content: flex-start;
@@ -13,12 +6,15 @@ body {
 
 /* --- Header --- */
 header{
-    background-image: url("neon-space-1.jpg");
+    /* background-image: url("https://www.wallpaperflare.com/static/918/501/158/1980s-pylot-synthwave-new-retro-wave-wallpaper-thumb.jpg");
+    background-origin:content-box;
+    repeat: none; */
     text-align: center;
     border: 2px solid black;
     /* position: relative; */
     padding: 25px 0;
 } 
+
 
 h1 {
         /* text-align: center; */
@@ -50,30 +46,53 @@ h3 {
 .sidenav a {
     margin: 20px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
+    line-height: 1.5;
+    /* border: 2px solid black; */
     /* color: #ffff9bff; */
-    /* text-align: right;*/
+    /* text-align: right; */
+    
  
-}
+} 
 
 main {
-    display: flex;
+    display: block;
+    /* flex-wrap: wrap; */
 }
 
 /* --- About Me --- */
 
-.aboutMe {
+.aboutMe {   
     display: flex;
+    justify-content: flex-start;
     margin-right: 160px;
 }
 
-.aboutMe div{
-    align-items: center;
+.aboutMe div {
+    border: 2px solid black;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
+    /* margin-left: 450px;
+    height: 62px;
+    margin-top: -252px; */
+}
+
+#hero {
+    width: 450px;
+    height: 250px;
+}
+
+.aboutMe h2 {
+    text-align: left;
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.aboutMe p {
+    margin-left: 15px; 
 }
 
 .aboutMe img {
@@ -89,23 +108,27 @@ main {
     margin-right: 198px;
     border: 2px solid black;
     flex-direction: row;
+    justify-content: space-evenly;
     /* margin-bottom: 0px; */
 }
-}
+
 .row {
     margin: 8px -16px;
+    width: 100%;
 }
 
 /* padding between each column */
 .row,
 .row > .column {
     padding:8px;
+    
+    
 }
 
 /* for equal columns, float next to each other */
 .column{
     float: left;
-    width: 25%;
+    width: 30%;
 }
 
 /* clear floats */
@@ -132,19 +155,45 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    border: 2px solid black;
+    margin-right: 162px;
  }
 
-form > h2 {
-    display: flex;
-    font-size: 30px;
-}
- #fname #lname #subject {
-     width: 25%;
+ form h2 {
+     font-size: 30px
  }
+
+ form label {
+    font-size: 20px;
+    margin-top: 10px
+ }
+
+ #fname #lname #subject {
+    width: 25%;
+}
+
+#submit {
+    margin: 10px;
+}
+
+.footer {
+    position:absolute;
+    width: 100%;    
+    border: 2px solid black;
+    
+}
+
+.footer h3 {
+    text-align: center;
+    margin-right: 160px;
+    font-size: 30px;
+    padding: 10px 0;
+}
 
 @media screen and (max-width: 900px) {
     .column {
         width: 50%;
+        flex-direction
     }
 }
 
