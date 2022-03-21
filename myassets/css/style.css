@@ -1,4 +1,7 @@
-
+:root {
+    --background: rgb(161,202,241);
+    --border: rgb(125,249,255);
+}
 
 body {
     justify-content: flex-start;
@@ -6,11 +9,11 @@ body {
 
 /* --- Header --- */
 header{
-    /* background-image: url("https://www.wallpaperflare.com/static/918/501/158/1980s-pylot-synthwave-new-retro-wave-wallpaper-thumb.jpg");
-    background-origin:content-box;
-    repeat: none; */
+   background-image: linear-gradient(rgba(161, 202, 241,1), rgba(141,217,204,1));
+    
+    height: 250px;
     text-align: center;
-    border: 2px solid black;
+    border-bottom: 10px solid rgb(125,249,255);
     /* position: relative; */
     padding: 25px 0;
 } 
@@ -19,7 +22,8 @@ header{
 h1 {
         /* text-align: center; */
         /* color: #ffff9bff; */
-        font-size: 50px;
+        font-size: 60px;
+        padding-top: 50px;
 }
 
 h3 {
@@ -27,27 +31,25 @@ h3 {
     padding-top: 13px;
 }
 
-/* --- Side Navigation Bar --- */
-.sidenav {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    position: absolute;
-    top: 131px;
+/* --- Navigation Bar --- */
+.navbar {
+   /* background-color: rgba(161, 202, 241); */
+    text-align: right;
     right: 0px;
-    height: 100%;
-    width: 160px;
-    border: 2px solid black;
+    
+    
     /* justify-content: flex-end; */
     /* background-color: #1b2845ff; */
     /* color: #ffff9bff; */
 }
 
-.sidenav a {
+.navbar a {
     margin: 20px;
     text-decoration: none;
     font-size: 25px;
     line-height: 1.5;
+    border-left: 5px solid rgb(125,249,255);
+    padding-left: 10px;
     /* border: 2px solid black; */
     /* color: #ffff9bff; */
     /* text-align: right; */
@@ -64,8 +66,9 @@ main {
 
 .aboutMe {   
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    margin-right: 160px;
+    
 }
 
 .aboutMe div {
@@ -75,37 +78,34 @@ main {
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
+    width: 50%;
     /* margin-left: 450px;
     height: 62px;
     margin-top: -252px; */
 }
 
 #hero {
-    width: 450px;
-    height: 250px;
+    width: 49%;
 }
 
 .aboutMe h2 {
     text-align: left;
-    font-size: 30px;
-    margin-left: 15px;
+    font-size: 45px;
+    
 }
 
 .aboutMe p {
     margin-left: 15px; 
 }
 
-.aboutMe img {
-    width: 500px;
-    height: 300px;
-}
+
 
 /* --- Portfolio Gallery --- */
 
 .projects {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 198px;
+    
     border: 2px solid black;
     flex-direction: row;
     justify-content: space-evenly;
@@ -115,6 +115,7 @@ main {
 .row {
     margin: 8px -16px;
     width: 100%;
+    margin-left: 50px;
 }
 
 /* padding between each column */
@@ -156,7 +157,7 @@ img {
     align-items: center;
     justify-content: space-evenly;
     border: 2px solid black;
-    margin-right: 162px;
+    
  }
 
  form h2 {
@@ -176,6 +177,8 @@ img {
     margin: 10px;
 }
 
+
+/* --- Footer --- */
 .footer {
     position:absolute;
     width: 100%;    
@@ -190,10 +193,11 @@ img {
     padding: 10px 0;
 }
 
+
 @media screen and (max-width: 900px) {
     .column {
         width: 50%;
-        flex-direction
+        
     }
 }
 
