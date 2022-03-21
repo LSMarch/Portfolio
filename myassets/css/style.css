@@ -198,9 +198,13 @@ img {
     #hero {
         display: none;
     }
-    .aboutMe {
+    .aboutMe div{
         width: 100%;
     }
+    .aboutMe p, .navbar {
+        text-align:center;
+    }
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -212,11 +216,6 @@ img {
        margin-left: 0px;
        width: 80%;  
     }
-    .aboutMe div{
-        width: 100%;
-    }
-    .aboutMe p {
-        text-align: center;
-    }
+    
 }
 
