@@ -1,19 +1,22 @@
 :root {
-    --background: rgb(161,202,241);
-    --border: rgb(125,249,255);
+    --background: rgb(0,33,71);
+    --border: rgb(222,184,135);
 }
 
 body {
     justify-content: flex-start;
+    background-color: var(--background);
+    color: rgb(93,164,147);
 }
 
 /* --- Header --- */
 header{
-   background-image: linear-gradient(rgba(161, 202, 241,1), rgba(141,217,204,1));
-    
+   background-image: linear-gradient(rgba(0,33,71,0.8), rgba(0,33,71,1));
+    /* background-color: rgb(0,33,71); */
+    color: rgb(93,164,147);
     height: 250px;
     text-align: center;
-    border-bottom: 10px solid rgb(125,249,255);
+    border-bottom: 10px solid var(--border);
     /* position: relative; */
     padding: 25px 0;
 } 
@@ -36,6 +39,8 @@ h3 {
    /* background-color: rgba(161, 202, 241); */
     text-align: right;
     right: 0px;
+    background-color: var(--background);
+    border-bottom: 1px solid var(--border);
     
     
     /* justify-content: flex-end; */
@@ -48,12 +53,13 @@ h3 {
     text-decoration: none;
     font-size: 25px;
     line-height: 1.5;
-    border-left: 5px solid rgb(125,249,255);
+    /* background-color: var(--background); */
+    /* border-left: 5px solid rgb(125,249,255); */
     padding-left: 10px;
     /* border: 2px solid black; */
     /* color: #ffff9bff; */
     /* text-align: right; */
-    
+    color: rgb(93,164,147);
  
 } 
 
@@ -66,36 +72,43 @@ main {
 
 .aboutMe {   
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: flex-start;
     
 }
 
 .aboutMe div {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 53%;
     /* margin-left: 450px;
     height: 62px;
     margin-top: -252px; */
 }
 
 #hero {
-    width: 49%;
+    width: 47%;
 }
 
 .aboutMe h2 {
-    text-align: left;
+    text-align:center;
     font-size: 45px;
+    width: 100%;
+    background-color: var(--background);
+    color: rgb(93,164,147);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
     
 }
 
 .aboutMe p {
     margin-left: 15px; 
+    line-height: 1.3;
 }
 
 
@@ -106,7 +119,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     
-    border: 2px solid black;
+    /* border: 2px solid black; */
     flex-direction: row;
     justify-content: space-evenly;
     /* margin-bottom: 0px; */
@@ -129,8 +142,13 @@ main {
 /* for equal columns, float next to each other */
 .column{
     float: left;
-    width: 30%;
+    width: 25%;
+    /* background-color: var(--background); */
 }
+
+/* .column:hover{
+    width: 45%;
+} */
 
 /* clear floats */
 .row:after {
@@ -146,8 +164,15 @@ img {
 .content {
     padding: 10px;
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid var(--border);
+    background-color: var(--background);
+    
 }
+
+.content:hover{
+    transform: scale(1.5);
+}
+
 
 /* --- Contact --- */
  form {
@@ -156,7 +181,9 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    border: 2px solid black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
     
  }
 
@@ -182,13 +209,14 @@ img {
 .footer {
     position:absolute;
     width: 100%;    
-    border: 2px solid black;
     
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .footer h3 {
     text-align: center;
-    margin-right: 160px;
+    
     font-size: 30px;
     padding: 10px 0;
 }
