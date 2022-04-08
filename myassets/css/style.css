@@ -1,11 +1,12 @@
 :root {
-    --background: rgb(0,33,71);
-    --border: rgb(229,142,115);
+    --background: rgb(108,207,246);
+    --border: rgb(51,30,56);
 }
 
 body {
     justify-content: flex-start;
-    background-image: linear-gradient(rgba(135,206,235,1), rgba(0,33,71,1));
+    /* background-image: linear-gradient(rgba(135,206,235,1), rgba(0,33,71,1)); */
+    background-color: rgb(250,242,240);
     color: rgb(0,49,83);
 }
 
@@ -16,14 +17,14 @@ header{
     text-align: center;
     border-bottom: 10px solid var(--border);    
     padding: 25px 0;
-   
+    /* background-image: url=("./images/3261992.png"); */   
 } 
 
 
-h1 {        
-        font-size: 60px;
-        padding-top: 50px;
-        font-family: "Ubuntu";
+h1{        
+    font-size: 60px;
+    padding-top: 50px;
+    font-family: "Ubuntu";
 } 
 
 
@@ -36,7 +37,7 @@ h3 {
 .navbar {   
     text-align: right;
     right: 0px;
-    background-color: var(--background);
+    /* background-color: var(--background); */
     border-bottom: 1px solid var(--border);    
 }
 
@@ -46,7 +47,7 @@ h3 {
     font-size: 25px;
     line-height: 1.5;    
     padding-left: 10px;    
-    color: rgb(93,164,147); 
+    color: rgb(0,49,83); 
     font-family: "Ubuntu";
 } 
 
@@ -83,12 +84,13 @@ main {
 .aboutMe h2 {
     text-align:center;
     font-size: 45px;
-    width: 100%;
+    width: 102%;
     background-color: var(--background);
-    color: rgb(93,164,147);
+    color: rgb(0,49,83);
     padding-top: 15px;
     padding-bottom: 15px;
     font-family: "Ubuntu";
+    border-bottom: 1px solid var(--border);
     
 }
 
@@ -150,7 +152,7 @@ img {
     border: 2px solid var(--border);
     background-color: var(--background);
     border-radius:15px;
-    color: rgb(93,164,147);    
+    color: rgb(0,49,83);    
 }
 
 .content h3 {
@@ -180,14 +182,14 @@ img {
 
  form h2 {
      font-size: 36px;
-     color: rgb(93,164,147);
+     color: rgb(0,49,83); 
      font-family: "Ubuntu";
  }
 
  form label {
     font-size: 20px;
     margin-top: 10px;
-    color: rgb(93,164,147);
+    color: rgb(0,49,83);
     font-family: "Lora";
  }
 
@@ -207,7 +209,7 @@ img {
     padding-top: 10px;
     padding-bottom: 10px;
     background-clip: padding-box;
-    background-color:rgb(93,164,147);
+    background-color:var(--background)
 }
 
 .footer h3 {
