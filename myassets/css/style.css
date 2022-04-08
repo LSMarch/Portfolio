@@ -138,6 +138,12 @@ img {
     width: 100%;
 }
 
+#card-img
+{
+    width: 200px;
+    height: 150px;
+}
+
 .content {
     padding: 10px;
     text-align: center;
