@@ -10,109 +10,97 @@
         <title>Portfolio</title>
     </head>    
     <body>
-        <header> 
-            
+        <header>             
             <h1>Libby Marchetti</h1>
-            <h3>Over caffeinated and extremely nerdy</h3>
-        </header>
+            <h2>Fullstack Web Developer</h2>
+        </header>    
         
-        
-            <nav class="navbar">
-                
-                    <a href="#aboutMe">About Me</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>            
-                
-            </nav> 
+        <nav class="navbar">                
+            <a href="#aboutMe">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>               
+        </nav> 
 
-            <main>
-                <section class="aboutMe" id="aboutMe">
-                <img id="hero" src="./myassets/images/selfie-1.jpg" alt="Me!">
-                   <div>
-                    <h2>About Me</h2>
-                    <p>I'm your one-stop shot for all your web development needs!<br>
-                    HTML? Check. CSS? Check. <br>
-                    Javascript? Check. jQuery? Check. <br>
-                    Everything else? Working on it!
-                    </p>
-                    <p>Why web development you ask? </p>
-                   </div>
-                </section>
+        <main>
+            <aside class="aboutMe" id="aboutMe">               
+                <!-- <img id="hero" src="./myassets/images/prof.jpg" alt="profile-img"> -->
+                
+                <h2>About Me</h2>
+                <div>
+                    <a href="https://github.com/LSMarch"><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <p>I'm your one-stop shot for all your web development needs!</p><br>
+                <p>HTML? Check. CSS? Check.</p> <br>
+                <p>Javascript? Check. jQuery? Check.</p> <br>
+                <p>Everything else? Working on it!</p><br>                    
+                <p>Why web development you ask? </p>
+                <form id="contact" class="card">
+                    <h2>Contact</h2>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="First name">
+                
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Last name">
+                
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+            </aside>
             
-                <projects class="projects" id="projects">
-                    <div class="row">
-                        <div class="column">
-                            <div class="content">
+            <section class="projects" id="projects">
+                <div class="row">
+                    <div class="column">
+                        <div class="content">
                             <a href="https://github.com/LSMarch/code-refactor"><img  id ="card-img" src="./myassets/images/3551894.jpg" alt="Star Trek Engineering"></a>
-                                <h3>Refactoring</h3> 
-                                <p>Organized code on a project</p>   
-                            </div>
+                            <h3>Refactoring</h3> 
+                            <p>Organized code on a project</p>   
                         </div>
-                
-                
-                        <div class="column">
-                            <div class="content">
-                            <a href="https://github.com/LSMarch/password-gen"><img id ="card-img" src="./myassets/images/p-g-screenshot.png" alt="Star Trek Engineering"></a>
-                                <h3>Password Generator</h3>
-                                <p>A random password generator</p>
-                            </div>
+                    </div>               
+                    <div class="column">
+                        <div class="content">
+                        <a href="https://github.com/LSMarch/password-gen"><img id ="card-img" src="./myassets/images/p-g-screenshot.png" alt="Star Trek Engineering"></a>
+                            <h3>Password Generator</h3>
+                            <p>A random password generator</p>
                         </div>
-                
-                
-                        <div class="column">
-                            <div class="content">
-                                <a href="https://github.com/LSMarch/day_scheduler"><img id ="card-img" src="./myassets/images/3551894.jpg" alt="Star Trek Engineering"></a>
-                                <h3>Day Scheduler</h3>
-                                <p>An app to help schedule your day</p>
-                            </div>
+                    </div>               
+                    <div class="column">
+                        <div class="content">
+                            <a href="https://github.com/LSMarch/day_scheduler"><img id ="card-img" src="./myassets/images/3551894.jpg" alt="Star Trek Engineering"></a>
+                            <h3>Day Scheduler</h3>
+                            <p>An app to help schedule your day</p>
                         </div>
-                    
-
-                    
-                        <div class="column">
-                            <div class="content">
-                                <a href="https://github.com/LSMarch/coding-quiz"><img id ="card-img" src="./myassets/images/under_construction.jpg" alt="Star Trek Engineering"></a>
-                                <h3>Coding Quiz</h3>
-                                <p>Created a quiz with Javascript</p>
-                            </div>
+                    </div>                   
+                    <div class="column">
+                        <div class="content">
+                            <a href="https://github.com/LSMarch/coding-quiz"><img id ="card-img" src="./myassets/images/under_construction.jpg" alt="Star Trek Engineering"></a>
+                            <h3>Coding Quiz</h3>
+                            <p>Created a quiz with Javascript</p>
                         </div>
-
-                         <div class="column">
-                            <div class="content">
-                                <a href="https://github.com/LSMarch/bootcamp-forum/tree/main"><img id ="card-img" src="./myassets/images/Bootcamp-forum.PNG" alt="Star Trek Engineering"></a>
-                                <h3>Bootcamp Forum</h3>
-                                <p>Connect with other bootcamp students</p>
-                            </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <a href="https://github.com/LSMarch/bootcamp-forum/tree/main"><img id ="card-img" src="./myassets/images/Bootcamp-forum.PNG" alt="Star Trek Engineering"></a>
+                            <h3>Bootcamp Forum</h3>
+                            <p>Connect with other bootcamp students</p>
                         </div>
-
-                        <div class="column">
-                            <div class="content">
-                                <a href="https://github.com/LSMarch/project-1"><img id ="card-img" src="./myassets/images/Laughing Bartender.png" alt="Star Trek Engineering"></a>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <a href="https://github.com/LSMarch/project-1"><img id ="card-img" src="./myassets/images/Laughing Bartender.png" alt="Star Trek Engineering"></a>
                             <h3>Laugh and Pour</h3>
                             <p>Random Drink and Joke Generator</p>
-                            </div>
-                     </div>
+                        </div>
                     </div>
-                </projects>
-            </main>
-                     
-            
-            <form id="contact" class="card"><h2>Contact</h2>
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="First name">
-            
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Last name">
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email">               
-                
-                <input id="submit" type="submit" value="Submit">
-            </form>
-            
-            
+                </div>
+            </section>
+        </main>           
+                   
         <footer class="footer">
-            <!-- <h3>Live long and Prosper</h3> -->
+           <p> made with <i class="fa-solid fa-mug-hot"></i> by lsmarch</p>
         </footer>
     </body>
 </html>

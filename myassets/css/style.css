@@ -16,10 +16,9 @@ header{
     height: 250px;
     text-align: center;
     border-bottom: 10px solid var(--border);    
-    padding: 25px 0;
+    padding: 20px 0;
     /* background-image: url=("./images/3261992.png"); */   
 } 
-
 
 h1{        
     font-size: 60px;
@@ -27,8 +26,8 @@ h1{
     font-family: "Ubuntu";
 } 
 
-
-h3 {    
+h2 {   
+    font-size:30px; 
     padding-top: 13px;
     font-family: "Lora";
 }
@@ -37,8 +36,9 @@ h3 {
 .navbar {   
     text-align: right;
     right: 0px;
-    /* background-color: var(--background); */
-    border-bottom: 1px solid var(--border);    
+    background-color: var(--background);
+    border-bottom: 1px solid var(--border);  
+    padding: 10px;
 }
 
 .navbar a {
@@ -56,41 +56,48 @@ h3 {
 }
 
 main {
-    display: block;    
+    display: flex;    
 }
 
 /* --- About Me --- */
 
 .aboutMe {   
     display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: flex-start;    
+    /* flex-wrap: wrap-reverse; */
+    flex-direction: column;
+    justify-content: flex-start; 
+    width: 24%;
+    border: 2px red solid;
+    /* align-items: center; */
 }
 
 .aboutMe div {    
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    width: 53%;  
+    margin-bottom: 15px;
+    /* padding: 10px; */
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* height: 100vh; */
+    /* width: 53%;   */
 }
 
 #hero {
-    width: 46%;
+    /* width: 46%; */
     border: 1px solid var(--border);
 }
 
 .aboutMe h2 {
     text-align:center;
-    font-size: 45px;
-    width: 102%;
-    background-color: var(--background);
+    font-size: 25px;
+    /* width: 102%; */
+    /* background-color: var(--background); */
     color: rgb(0,49,83);
     padding-top: 15px;
     padding-bottom: 15px;
     font-family: "Ubuntu";
-    border-bottom: 1px solid var(--border);
+    /* border-bottom: 1px solid var(--border); */
     
 }
 
@@ -100,6 +107,11 @@ main {
     font-family: "Lora";
 }
 
+/* .aboutMe i {
+    padding: 20px;
+    justify-content: ;
+} */
+
 
 
 /* --- Portfolio Gallery --- */
@@ -108,7 +120,9 @@ main {
     display: flex;
     flex-wrap: wrap;    
     flex-direction: row;
-    justify-content: space-evenly;    
+    justify-content: space-evenly;
+    /* width: 74%;  */
+    border: 2px red solid;   
 }
 
 .row {
@@ -165,7 +179,7 @@ img {
 }
 
 .content:hover{
-    transform: scale(1.2) rotate(6deg);    
+    transform: scale(1.2) ;    
 }
 
 
@@ -181,7 +195,7 @@ img {
  }
 
  form h2 {
-     font-size: 36px;
+     font-size: 25px;
      color: rgb(0,49,83); 
      font-family: "Ubuntu";
  }
@@ -212,11 +226,11 @@ img {
     background-color:var(--background)
 }
 
-.footer h3 {
+.footer p {
     /* background-color: rgb(93,164,147); */
     text-align: center;
     color: rgb(0,49,83);
-    font-size: 40px;
+    /* font-size: 40px; */
     padding-top: 10px;
     padding-bottom: 10px;
     font-family: "Ubuntu";
