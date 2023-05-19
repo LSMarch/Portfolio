@@ -12,7 +12,9 @@ const portfolioSlice = createSlice({
     reducers: {
 
     },
-    extraReducers(builder) {
+    // extraReducers(builder) {
 
-    }
+    // }
 })
+
+export default portfolioSlice.reducer;
