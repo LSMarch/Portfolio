@@ -6,6 +6,8 @@ const initialState = {
     error: null,
 }
 
+
+
 const portfolioSlice = createSlice({
     name: 'portfolio',
     initialState,

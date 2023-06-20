@@ -1,17 +1,15 @@
 import React from 'react'
+import ProjectList from '../projects/ProjectList'
 
 const Portfolio = () => {
     return (
-        <main>
+        <main >
             <div className='card'>
-                <div className='card-body'>
-                    <div className='card'>
-                        <div className='card-body'>
-                            <p className='card-title'>Project 1</p>
-                        </div>
+                <div className='card-body '>
+                    <div className=' d-flex  justify-content-evenly'>
+                        <ProjectList />
                     </div>
                 </div>
-
             </div>
         </main>
     )
