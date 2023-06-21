@@ -28,32 +28,31 @@ const Header = () => {
 
                 <ul className="nav">
                     <li className="nav-item" >
-                        <button className="btn btn-outline-info m-1"
+                        <button className="btn btn-outline-info m-1 "
                             onClick={onDownload}>
-                            {/* <FontAwesomeIcon icon={faPenToSquare} /> */}
                             Download Resume
                         </button>
                     </li>
-
-                    <li className="nav-item" >
-                        <button className="btn btn-outline-info m-1">
+                    {/* TODO: install dotenv and keep urls secret */}
+                    <li className="nav-item " >
+                        <a className="btn btn-outline-info m-1 text-decoration-none" href={process.env.REACT_APP_GITHUB_URL}>
                             <FontAwesomeIcon icon={faGithub} />
-                        </button>
+                        </a>
                     </li>
                     <li className="nav-item" >
-                        <button className="btn btn-outline-info m-1">
+                        <a className="btn btn-outline-info m-1 text-decoration-none" href={process.env.REACT_APP_LINKEDIN_URL}>
                             <FontAwesomeIcon icon={faLinkedin} />
-                        </button>
+                        </a>
                     </li>
-                    <li className="nav-item" >
-                        <button className="btn btn-outline-info m-1">
+                    {/* <li className="nav-item" >
+                        <a className="btn btn-outline-info m-1 text-decoration-none" href="https://www.github.com/LSMarch">
                             <FontAwesomeIcon icon={faDiscord} />
-                        </button>
-                    </li>
+                        </a>
+                    </li> */}
                     <li className="nav-item" >
-                        <button className="btn btn-outline-info m-1">
+                        <a className="btn btn-outline-info m-1 text-decoration-none" href={process.env.REACT_APP_EMAIL}>
                             <FontAwesomeIcon icon={faEnvelope} />
-                        </button>
+                        </a>
                     </li>
 
                 </ul>
