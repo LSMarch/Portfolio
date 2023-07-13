@@ -8,7 +8,7 @@ const initialState = {
 }
 
 export const fetchProjects = createAsyncThunk('projects/fetchProjects', async () => {
-    const response = await fetch('https://api.github.com/users/LSMarch/repos')
+    const response = await fetch('https://api.github.com/users/LSMarch/starred')
     const data = await response.json();
     console.log(data);
     return data
